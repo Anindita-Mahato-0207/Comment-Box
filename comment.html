@@ -1,0 +1,17 @@
+<html>
+<head>
+<title>comment</title>
+<head>
+<body>
+<input type="text" name="comm" id="comInput" placeholder="Enter comment" />
+<input type="button" onclick="combox()" value="SAVE" />
+<p id='message'></p>
+</body>
+<script>
+function combox(){
+var coms = (document.getElementById("comInput").value);
+coms=document.getElementById('message').innerText+"\n"+coms;
+document.getElementById('message').innerText=coms;
+}
+</script>
+</html>
